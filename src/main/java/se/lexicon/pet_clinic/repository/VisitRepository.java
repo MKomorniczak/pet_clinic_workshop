@@ -9,8 +9,9 @@ import java.util.List;
 
 public interface VisitRepository extends CrudRepository<Visit, String> {
     // todo: implement basic CRUD
-    List<Visit> findByPetName (Pet name);
-    List<Visit> findByPetTypeName (PetType name);
+    List<Visit> findByPetName (String name);
+    List<Visit> findByPet_PetTypeName (String name);
+
 
     //todo: select visit by pet name
     //todo: select visit by pet type name

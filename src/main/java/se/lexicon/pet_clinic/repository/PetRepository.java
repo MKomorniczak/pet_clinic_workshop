@@ -11,11 +11,11 @@ import java.util.List;
 public interface PetRepository extends CrudRepository<Pet, String> {
     List<Pet> findByNameIgnoreCase(String name);
 
-    List<Pet> findByPetTypeName (PetType name);
+    List<Pet> findByPetTypeName (String name);
 
-    List<Pet> findByOwnerFirstNameAndOwnerLastName(Owner firstName, Owner lastName);
+    List<Pet> findByOwnerFirstNameAndOwnerLastName(String firstName, String lastName);
 
-    List<Pet> findByOwnerTelephone(Owner telephone);
+    List<Pet> findByOwnerTelephone(String telephone);
 
     // todo: implement basic CRUD
 
